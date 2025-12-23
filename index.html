@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Strength Analyzer</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1 class="header-title">Password Strength Analyzer</h1>
+      <p class="header-subtitle">
+        A tool to assess password security and generate attack-focused wordlists.
+      </p>
+    </header>
+
+    <main class="card">
+      <!-- 1. Analyze section -->
+      <section class="section">
+        <h2 class="section-title">1. Analyze Password</h2>
+
+        <label class="label" for="passwordInput">Enter password</label>
+
+        <!-- password wrapper + toggle button -->
+        <div class="password-wrapper">
+          <input id="passwordInput"
+                 type="password"
+                 class="input"
+                 placeholder="Type a password" />
+                 <button type="button" id="togglePwd" class="eye-btn">(◕ ◕)</button>
+        </div>
+
+        <button id="analyzeBtn" class="btn btn-primary">
+          Analyze Password
+        </button>
+
+        <pre id="analyzeOutput" class="output" aria-live="polite"></pre>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- 2. Custom Wordlist Generator -->
+      <section class="section">
+        <h2 class="section-title">2. Custom Wordlist Generator</h2>
+
+        <label class="label" for="seedsInput">
+          Seeds (name, year, pet, comma-separated)
+        </label>
+        <input id="seedsInput"
+               type="text"
+               class="input"
+               placeholder="alice,1997,tiger" />
+
+        <div class="row">
+          <div class="col">
+            <label class="label" for="lengthInput">Max length</label>
+            <input id="lengthInput"
+                   type="number"
+                   value="12"
+                   class="input" />
+          </div>
+          <div class="col">
+            <label class="label" for="outputFileInput">Output file</label>
+            <input id="outputFileInput"
+                   type="text"
+                   value="mylist.txt"
+                   class="input" />
+          </div>
+        </div>
+
+        <button id="generateBtn" class="btn btn-secondary">
+          Generate Wordlist
+        </button>
+
+        <div id="generateOutput" class="output"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Your passwords are processed locally on this machine; nothing is stored on the server.</p>
+    </footer>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

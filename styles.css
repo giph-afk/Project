@@ -1,0 +1,195 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0b0a34;
+  color: #e5e7eb;
+}
+
+/* Layout wrapper */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.header-icon {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #dbeafe;
+}
+
+.header-subtitle {
+  margin: 4px 0 0;
+  font-size: 21px;
+  color: #9ca3af;
+}
+
+/* Card */
+.card {
+  background: #0f1636;
+  border-radius: 18px;
+  padding: 24px 28px 28px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
+  border: 1px solid #1f2937;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 21px;
+  font-weight: 600;
+  color: #e5e7eb;
+  margin: 0 0 10px;
+}
+
+/* Fields */
+.label {
+  display: block;
+  font-size: 21px;
+  color: #9ca3af;
+  margin-bottom: 4px;
+}
+
+/* password wrapper - positions toggle */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Input */
+.input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 21px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* add right padding so text doesn't collide with button */
+.password-wrapper .input {
+  padding-right: 60px;
+}
+
+.input:focus {
+  border-color: #300427;
+  box-shadow: 0 0 0 1px #2563eb33;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-size:17px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #059669;
+  color: #e5e7eb;
+}
+
+.btn-primary:hover {
+  background: #047857;
+}
+
+.btn-secondary {
+  background: #059669;
+  color: #e5e7eb;
+}
+
+.btn-secondary:hover {
+  background: #047857;
+}
+
+/* Toggle button (lenny face) */
+.eye-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9ca3af;
+  font-size: 19px;
+  padding: 6px 8px;
+  line-height: 1;
+  border-radius: 6px;
+  transition: background 0.12s ease, color 0.12s ease, transform 0.08s ease;
+}
+
+/* subtle hover + active affordance */
+.eye-btn:hover {
+  color: #e5e7eb;
+  background: rgba(255,255,255,0.03);
+}
+.eye-btn:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+/* Row for length + file */
+.row {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.col {
+  flex: 1;
+}
+
+/* Output areas */
+.output {
+  margin-top: 10px;
+  min-height: 40px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #111827;
+  background: #020617;
+  font-size: 19px;
+  white-space: pre-wrap;
+}
+
+/* Divider */
+.divider {
+  border: 0;
+  border-top: 1px solid #111827;
+  margin: 16px 0;
+}
+
+/* Footer */
+.footer {
+  margin-top: 16px;
+  font-size: 15px;
+  color: #6b7280;
+  text-align: center;
+}
