@@ -71,8 +71,7 @@ python -m venv .venv
 pip install -r requirements.txt
 3. Run the web application
 python app.py
-Access the application at:
-http://127.0.0.1:5000/
+Access the application at link provided.
 
 #Privacy Disclaimer
 This application does not store, log, or transmit user passwords. All password analysis is performed temporarily in memory and discarded immediately after processing.
